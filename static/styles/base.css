@@ -1,6 +1,160 @@
-h1, h2, h3, h4, h5 {
-  font-family: 'Markazi Text', serif;
+/* Brand Code */
+:root{
+  --main-color: #fce218;
+  --secondary-color: #535353;
+  --tertiary-color: #5c6ea8;
+  --white-color: white;
+  --main-font: 'Merriweather', serif;
+  --title-font:  'Expletus Sans', cursive;
 }
-p {
-  font-family: 'Rosario', sans-serif;
+
+
+body {
+  font-family: var(--main-font);
+  padding-top: 8em;
+  border: 0;
+}
+
+
+h1{
+  font-family: var(--title-font)
+}
+
+#navbarNav > ul > li > a {
+  font-family: var(--title-font);
+  color: white;
+  font-size: 1.2em;
+  margin: 1em;
+}
+
+.anchor{
+  display: block;
+  height: 135px; /*same height as header*/
+  margin-top: -135px; /*same height as header*/
+  visibility: hidden;
+}
+
+
+i {
+  color: white;
+  font-size: 4em;
+}
+
+.nopad {
+  padding: 0px;
+}
+
+/* Official Color */
+nav {
+  background-color: var(--secondary-color);
+}
+
+.offback{
+  background-color: var(--main-color)
+}
+.offtop{
+  color: var(--main-color);
+}
+.secondback{
+  background-color: var(--secondary-color);
+}
+
+.secondtop{
+  color: var(--secondary-color)
+}
+
+.thirdback{
+  background-color: var(--tertiary-color);
+}
+
+.thirdtop{
+  color: var(--tertiary-color)
+}
+
+.whiteback{
+  background-color: var(--white-color);
+}
+
+.whitetop{
+  color: var(--white-color)
+}
+
+
+/* Spacing */
+
+.container-fluid, .container{
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+.vertical-space-1 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.vertical-space-2 {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.vertical-space-3 {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+
+/* Logo Levels*/
+
+.x-1 {
+  color: #fce218;
+  font-size: 1.5em;
+  font-family: 'Expletus Sans', cursive;
+}
+.i-1 {
+  color: #fce218;
+  font-size: 0.75em;
+  font-family: 'Expletus Sans', cursive;
+}
+.logo-whitepass-1{
+  color: #535353;
+  font-size: 1em;
+  font-family: 'Expletus Sans', cursive;
+}
+.logo-darkpass-1{
+  color: white;
+  font-size: 1em;
+  font-family: 'Expletus Sans', cursive;
+}
+
+
+
+
+/* Cards */
+
+.card{
+  width: 18rem;
+  margin: 10px;
+}
+
+.card-fixed-header{
+  min-height:13em;
+}
+
+.card-header{
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+}
+
+.btn-outline-primary {
+   color: var(--tertiary-color);
+   border-color: var(--tertiary-color);
+}
+
+.btn:hover{
+  background-color: var(--tertiary-color);
+  color: var(--white-color);
+}
+
+@media only screen and (max-device-width: 667px) {
+.card{
+  margin-left: auto;
+  margin-right: auto;
+}
 }

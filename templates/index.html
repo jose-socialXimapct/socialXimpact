@@ -1,22 +1,195 @@
 {% extends "base.html" %}
 
 {% block content %}
+  <!-- About Us -->
+  <div class="container">
+    <!-- Our Solution -->
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <h1 class="display-3"> Our Solution</h1>
+      </div>
+    </div>
 
-<div class="row">
-  <div class="col-lg">
-    <h1>Upload Twitter Data</h1>
+    <!-- Vertical Divider -->
+    <div class="row vertical-space-1"></div>
+
+    <!-- Mission Statement -->
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <h2> You are the <span class="x-1"> X </span> variable that will multiply social impact. We have the formulas to make it happen. </h2>
+      </div>
+    </div>
+
+    <!-- Vertical Divider -->
+    <div class="row vertical-space-2"></div>
+
+    <!-- Calculator Icon -->
+    <div class="row">
+      <div class="col-md-8 offset-md-2 text-center">
+        <p><i class="fas fa-calculator offtop"></i> </p>
+      </div>
+    </div>
+    
+    <!-- Vertical Divider -->
+    <div class="row vertical-space-3"></div>
+
   </div>
-  <div class="col-lg">
-    <h1> test </h1>
+
+  <!-- Why?-->
+  <div class="column-fluid thirdback">
+      <div class="jumbotron thirdback whitetop col-md-8 offset-md-2">
+        <h1 class="display-4 offtop text-center"> Why did we create these formulas?</h1>
+        <p class="lead">
+          There are enormous social issues in the United States from homelessness to sexual assault to underbanking. We need bold, solution-driven impact leaders to tackle these issues. You're here because you care about these issues and you want to solve them.
+        </p>
+        <p class="lead">
+          These formulas we created will connect with other impact leaders, impact your life and impact your work. When you accomplish all three, you will shorten the distance to the final answer.
+          </p>
+        <hr class="my-4">
+        <p>- Jose Murillo, Founder of <span class="logo-darkpass-1">social</span><span class="x-1">X</span><span class="i-1">i</span><span class="logo-darkpass-1">mpact</span> </p>
+        <!-- Follow Me -->
+        <p> Follow Jose on 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://twitter.com/JoseMurilloInSJ" target="_blank"><i class="fab fa-twitter" style="font-size:2em"></i></a> 
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/josemanuelmurillo/" target="_blank"> <i class="fab fa-linkedin-in" style="font-size:2em"></i></a>
+        </p>
+      </div>
+
   </div>
-</div>
-<div class="row">
-  <div class="col">
-    <p> Welcome to </p>
+
+  <span class="anchor" id="ourformula"></span>
+  <!-- Our Formula -->
+  <div class="container">
+
+    <!-- Vertical Divider -->
+    <div class="row vertical-space-1">
+    </div>
+
+    <!-- Our Formula for Social Impact -->
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="display-4"> Our Formula For Social Impact</h1>
+      </div>
+    </div>
+
+    <!-- Vertical Divider -->
+    <div class="row vertical-space-3">
+    </div>
+
+    <!-- Our Formula Only -->
+    <div class="row">
+      <div class="col text-center">
+        <h1> 
+          <span class="logo-whitepass-1">
+          <span class="x-1">X</span><span class="i-1">0</span> + <span class="x-1">X</span><span class="i-1">1</span> + <span class="x-1">X</span><span class="i-1">2</span> =
+          </span>    
+          <span class="logo-whitepass-1">social</span><span class="x-1">X</span><span class="i-1">i</span><span class="logo-whitepass-1">mpact</span> 
+        </h1>
+      </div>
+    </div>
+
+    <!-- Vertical Divider -->
+    <div class="row vertical-space-3">
+    </div>
+
+  <!-- Variables in Formula -->
+      <div class="card-deck mb-3 text-center">
+      <!-- X0 -->
+      <div class="card mb-4 shadow-sm" data-aos="zoom-in" ata-aos-delay="100">
+        <div class="card-header card-fixed-header">
+          <h1 class='text-center'><span class="x-1"> X </span> <span class="i-1"> 0 </span> <br> <span class="logo-darkpass-1"> Impact Council </span> </h1>
+        </div>
+        <div class="card-body nopad">
+          <img src="{{ url_for('static',filename='img/democracy.jpg') }}" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body d-flex flex-column">
+          <p>
+            These are the most innovative organizations in the United States that are solving everything from homelessness to sexual assault to underbanking. They are redefining what is possible. We offer opportunities to work, volunteer and promote them!            
+          </p>
+          <form action="{{url_for('ourvariables', _anchor='impactcouncil')}}" class="mt-auto">
+          <button type="submit" class="btn btn-lg btn-block btn-outline-primary">Learn More</button>
+          </form>
+        </div>
+      </div>
+      <!-- X1 -->
+      <div class="card mb-4 shadow-sm" data-aos="zoom-in" ata-aos-delay="200">
+        <div class="card-header card-fixed-header">
+          <h1 class='text-center'><span class="x-1"> X </span> <span class="i-1"> 1 </span> <br> <span class="logo-darkpass-1"> Impact Your Life </span> </h1>
+        </div>
+        <div class="card-body nopad">
+          <img src="{{ url_for('static',filename='img/life.jpg') }}" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body d-flex flex-column">
+          <p>
+            Solving these social issues and creating social impact is not easy. In order to be the best Impact Leader, you need to create impact in your life. This requires setting two variables right: saving-time and self care. You need to reduce the time you spend on nonproductive activities, especially if they don’t bring you joy. Even more important, you need to take care of yourself, physically, mentally and emotionally. We offer the formulas to create impact in your life.
+          </p>
+          <form action="{{url_for('ourvariables', _anchor='impactlife')}}" class="mt-auto">
+          <button type="submit" class="btn btn-lg btn-block btn-outline-primary">Learn More</button>
+          </form>
+        </div>
+      </div>
+      <!-- X2 -->
+      <div class="card mb-4 shadow-sm" data-aos="zoom-in" ata-aos-delay="300">
+        <div class="card-header card-fixed-header">
+          <h1 class='text-center'><span class="x-1"> X </span> <span class="i-1"> 2 </span> <br> <span class="logo-darkpass-1"> Impact Your Work </span> </h1>
+        </div>
+        <div class="card-body nopad">
+          <img src="{{ url_for('static',filename='img/work.jpg') }}" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body d-flex flex-column">
+          <p> 
+            You have only a limited number of hours in the day to create social impact. This doesn’t mean you need to work more hours. On the contrary, we believe it is more important to work smarter. We have created tools so that you can do more in less time.
+          </p>
+          <form action="{{url_for('ourvariables', _anchor='impactwork')}}" class="mt-auto">
+          <button type="submit" class="btn btn-lg btn-block btn-outline-primary">Learn More</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="col">
-    <p> Forget about it </p>
+
+  <span class="anchor" id="joincommunity"></span>
+  <!-- Join sXi Community -->
+  <div class="container-fluid thirdback whitetop">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center col-md-8 offset-md-2">
+    <h1 class="display-4">Join our s<span class="x-1">X</span><span class="i-1">i</span> community!</h1>
+    <p class="lead"> From 3D printed houses to solve affordable housing to virtual reality workouts to improve our health, these are the things that excite us. That is why we are constantly crafting new formulas. We want to be transparent with how we make all of this possible. See below with how you can support us in helping impact leaders multiply their social impact. </p>
+    </div>
   </div>
-</div>
+  <div class="container-fluid  thirdback">
+    <div class="container">
+    <div class="card-deck mb-3 text-center">
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <i class="far fa-credit-card offtop"></i>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title pricing-card-title">$3 <small class="text-muted">/week</small></h1>
+          <p style="margin-left:3em;margin-right:3em">
+            100% of our operation is funded by our  s<span class="x-1">X</span><span class="i-1">i</span> leaders. As leaders creating social impact, you are the critical <span class="x-1">X</span> variable and we want to make sure you are our only priority. Join our s<span class="x-1">X</span><span class="i-1">i</span> community by providing us with a weekly contribution as small as $3.
+          </p>
+          <script type="text/javascript" defer src="https://donorbox.org/install-popup-button.js"></script><a class="dbox-donation-button btn btn-lg btn-block btn-outline-primary mt-auto" href="https://donorbox.org/socialximpact?default_interval=w">Join the sXi community!</a>
+          <!--
+          <form action="https://donorbox.org/socialximpact" method="get" target="_blank">
+            <button type="submit" class="btn btn-lg btn-block btn-outline-primary mt-auto"> Join our community!</button>
+          </form>
+          -->
+        </div>
+      </div>
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <i class="fas fa-funnel-dollar offtop"></i>
+        </div>
+        <div class="card-body d-flex flex-column">
+          <h1 class="card-title pricing-card-title"> 100% Other Revenue</h1>
+            <p style="margin-left:3em;margin-right:3em">
+              As part of our commitment to social impact, we promise to donate 100% of all our other funding to our impact leaders. Their work is critical to solving the largest social issues in the United States.
+            </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
 
 {% endblock %}

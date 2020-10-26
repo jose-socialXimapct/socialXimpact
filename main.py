@@ -16,6 +16,10 @@ web_site.config.from_object(Config)
 def index():
 	return render_template('index.html')
 
+@web_site.route('/ourvariables')
+def ourvariables():
+	return render_template('ourvariables.html')
+
 @web_site.route("/twitter_analyzer", methods=['GET', 'POST'])
 def twitter_analyzer():
   form = forms.TwitterForm()

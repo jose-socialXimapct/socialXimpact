@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="card-deck mb-3 text-center">
+
+    <!-- 1st item -->
+    <div class="card mb-4 shadow-sm" data-aos="zoom-in" ata-aos-delay="100">
+      <div class="card-header card-fixed-header">
+        Enter header here
+      </div>
+      <div class="card-body nopad">
+        Enter photo or icon here
+      </div>
+      <div class="card-body d-flex flex-column">
+        <p>
+          Description
+        </p>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-auto">Learn More</button>
+      </div>
+    </div>
+
+    <!-- 2nd item -->
+    <div class="card mb-4 shadow-sm" data-aos="zoom-in" ata-aos-delay="100">
+      <div class="card-header card-fixed-header">
+        Enter header here
+      </div>
+      <div class="card-body nopad">
+        Enter photo or icon here
+      </div>
+      <div class="card-body d-flex flex-column">
+        <p>
+          Description
+        </p>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-auto">Learn More</button>
+      </div>
+    </div>
+
+    <!-- 3rd item -->
+    <div class="card mb-4 shadow-sm" data-aos="zoom-in" ata-aos-delay="100">
+      <div class="card-header card-fixed-header">
+        Enter header here
+      </div>
+      <div class="card-body nopad">
+        Enter photo or icon here
+      </div>
+      <div class="card-body d-flex flex-column">
+        <p>
+          Description
+        </p>
+        <button type="button" class="btn btn-lg btn-block btn-outline-primary mt-auto">Learn More</button>
+      </div>
+    </div>
+  </div>
+</div>
